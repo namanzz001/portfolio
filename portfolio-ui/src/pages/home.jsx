@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/navbar";
 import styled from "styled-components";
 import {Link} from 'react-router-dom';
+import Wordcloud from "../components/wordcloud";
 
 
 const home = () => {
@@ -20,17 +21,23 @@ const home = () => {
             </p>
           </div>
         </div>
-
+        <div className="word-cloud">
+        <Wordcloud/>
+        </div>
+        
         <div className="btn-contact">
           <Link to='/contact'><button Link to='/contact'>Contact Me</button></Link>
         </div>
 
       </div>
+
+      
     </Container>
   );
 };
 
 const Container = styled.div`
+// background-color: black;
 height: 100vh;
 background-image: linear-gradient(to right, rgb(102, 191, 161), rgb(27, 38, 161));
 
@@ -39,7 +46,7 @@ background-image: linear-gradient(to right, rgb(102, 191, 161), rgb(27, 38, 161)
     display: flex;
     align-items: self-start;
     margin-left: 15%;
-    padding-top: 2%;
+    padding-top: 4%;
 }
 
 .home-bio{
@@ -62,6 +69,11 @@ background-image: linear-gradient(to right, rgb(102, 191, 161), rgb(27, 38, 161)
     color: white;
     letter-spacing: 2px;
     margin-top: -5%;
+}
+
+.word-cloud{
+  margin-left: 45%;
+  margin-top: -27%;
 }
 
 .btn-contact{
