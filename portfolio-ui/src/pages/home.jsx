@@ -73,12 +73,12 @@ background-image: linear-gradient(to right, rgb(102, 191, 161), rgb(27, 38, 161)
 
 .word-cloud{
   margin-left: 45%;
-  margin-top: -27%;
+  margin-top: -30%;
 }
 
 .btn-contact{
   margin-left: 15%;
-  margin-top: 1%;
+  margin-top: -7%;
   
 }
 

@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-// import ''; // Assuming you move the CSS here
 import 'https://www.goat1000.com/tagcanvas.min.js';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
@@ -12,7 +11,7 @@ const WordCloud = () => {
   useEffect(() => {
     try {
       window.TagCanvas.Start('myCanvas', 'tags', {
-        textColour: 'black',
+        textColour: '#94FFD8',
         outlineColour: '#1a1a1a',
         reverse: true,
         depth: 0.8,
